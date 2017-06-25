@@ -1,0 +1,125 @@
+/*头部logo样式*/
+.header {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 999999;
+}
+.clearfix {
+    display: block;
+}
+.logo {
+    float: left;
+    margin-left: 15px;
+    width: 129px;
+    height: 125px;
+}
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/logo.png");
+}
+
+/*---------------------------头部导航样式-------------------------------------*/
+
+/*使用dl dt dd*/
+.nav dl {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+/*设置第一个dl中a的默认背景色*/
+.active {
+    background-color: #009542;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*设置hover效果*/
+/*.header .nav dl dt a:hover {*/
+/*background-color: #009542;*/
+/*}*/
+/*.header .nav dl:hover dd {*/
+/*display: block ;*/
+/*}*/
+
+/*设置dt中a标签的样式*/
+.nav dl a {
+    display: block;
+    padding: 0 8px 0 38px;
+    height: 30px;
+    line-height: 30px;
+    background-image: url(../img/navicon.png);
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 5px;
+}
+/*设置dd大盒子的样式*/
+.nav dd {
+    display: none;
+    position: absolute;
+    top: 30px;
+    padding: 0 40px;
+    width: 380px;
+    height: 875px;
+    background: url(../img/secnavbg.png) no-repeat 0 4px;
+    color: #FFF;
+}
+.secnav {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-top: 24px;
+    margin-left: -20px;
+}
+.nav .secnav a {
+    padding: 0 20px 0 18px;
+    background: url(../img/navhover.png) no-repeat 2px center;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+.nav dd img {
+    display: block;
+    margin-bottom: 48px;
+}
+.nav dd h3 {
+    font-size: 30px;
+    font-family: SimSun;
+}
+.nav dd .line {
+    margin: 25px 0;
+    width: 2em;
+    height: 2px;
+    background: #c7bfb9;
+}
+.nav dd div.p {
+    padding-bottom: 45px;
+    font-size: 14px;
+    line-height: 2;
+    background: url(../img/iconjt.png) no-repeat 0 bottom;
+}
+.rps dd {
+    right: 0;
+}
+/*dt中文字前面的图标*/
+.n1 {
+    background-position: 8px 6px;
+}
+.n2 {
+    background-position: 8px -54px;
+}
+.n3 {
+    background-position: 8px -81px;
+}
+.n4 {
+    background-position: 8px -22px;
+}
+.n5 {
+    background-position: 8px -141px;
+}
+.n6 {
+    background-position: 8px -174px;
+}

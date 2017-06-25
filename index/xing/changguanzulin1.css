@@ -1,0 +1,372 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*清除浮动的设置*/
+input, img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    vertical-align: middle;
+    outline-style: none;
+}
+
+img {
+    display: block;
+}
+
+.clearfloat:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+
+body {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.zyjl {
+    height: 100%;
+    background: url("images/ib2.jpg") no-repeat center;
+}
+
+.zyjl .bx {
+    width: 1254px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+/*导航栏高度*/
+.yqhd-nav {
+    height: 135px;
+}
+
+.zyjl .bx .zyjl-logo .erweima {
+    position: absolute;
+    left: -10px;
+    bottom: 26px;
+}
+
+.zyjl .bx .zyjl-logo ul {
+    float: right;
+    position: absolute;
+    right: -5px;
+    bottom: 26px;
+}
+
+/*底下的字*/
+.zyjl .bx .zyjl-logo ul li {
+    color: #fff;
+    font: 14px "微软雅黑";
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+}
+
+.zyjl .bx .zyjl-logo ul li a:hover {
+    text-decoration: underline;
+}
+
+.zyjl .bx .zyjl-lb .zyjl-lbtop {
+    width: 1113px;
+    height: 64px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+.zyjl .bx .zyjl-lb .zyjl-lbtop ul li {
+    float: left;
+    color: white;
+    margin-left: 15px;
+}
+
+.zyjl .bx .zyjl-lb .zyjl-lbtop ul li.changguan {
+    background: #009542;
+    border-radius: 5px;
+}
+
+.zyjl .bx .zyjl-lb .zyjl-lbtop ul li a {
+    display: block;
+    width: 75px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.zyjl .bx .zyjl-lb .zyjl-lbtop ul li a:hover {
+    background: #009542;
+    border-radius: 5px;
+}
+
+.zyjl-lbbottom {
+    width: 1113px;
+    height: 475px;
+
+}
+
+/*背景*/
+.zyjl-lbbottombg {
+    width: 100%;
+    height: 400px;
+    background: url("images/plbg.png") repeat-x;
+    background-size: 18px 400px;
+    z-index: 100;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+/*箭头*/
+.zyjl-lbbtnl {
+    width: 67px;
+    height: 67px;
+    display: block;
+    position: absolute;
+    background: url("images/pnbtn.png") no-repeat 0 -66px;
+    top: 250px;
+    left: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.zyjl-lbbtnr {
+    width: 67px;
+    height: 67px;
+    display: block;
+    position: absolute;
+    background: url("images/pnbtn.png") no-repeat;
+    top: 250px;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*轮播图*/
+.zyjl-lbpic {
+    width: 1113px;
+    margin: 0px 70px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.zyjl-lbpic ul {
+    width: 10000px;
+    height: 400px;
+    position: relative;
+    left: 0;
+
+}
+
+.zyjl-lbpic ul li {
+    top: 0;
+    position: absolute;
+    width: 307px;
+    margin: 0 30px;
+
+    opacity: 0;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.zyjl-lbpic ul li img {
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+.zyjl-lbpic ul li:hover img.zyjl-lbdt {
+    transform: translateZ(120px);
+}
+
+.zyjl-lbpic ul li p {
+    text-align: center;
+    color: #fff;
+    font: 18px "微软雅黑";
+    background: #009542;
+    padding: 3px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 5px auto;
+}
+
+.zyjl-lbpic ul li img.slwave {
+    position: absolute;
+    top: 310px;
+    left: 80px;
+}
+
+.zyjl-lbpicxtb {
+    width: 31px;
+    height: 31px;
+}
+
+/*头部logo样式*/
+.header {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 999999;
+}
+
+.clearfix {
+    display: block;
+}
+
+.logo {
+    float: left;
+    margin-left: 15px;
+    width: 129px;
+    height: 125px;
+}
+
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("img/logo.png");
+}
+
+/*---------------------------头部导航样式-------------------------------------*/
+
+/*使用dl dt dd*/
+.nav dl {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+/*设置第一个dl中a的默认背景色*/
+.active {
+    background-color: #009542;
+}
+
+/*设置dt中a标签的样式*/
+.nav dl a {
+    display: block;
+    padding: 0 8px 0 38px;
+    height: 30px;
+    line-height: 30px;
+    background-image: url("img/navicon.png");
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/*设置dd大盒子的样式*/
+.nav dd {
+    display: none;
+    position: absolute;
+    top: 30px;
+    padding: 0 40px;
+    width: 380px;
+    height: 875px;
+    background: url(img/secnavbg.png) no-repeat 0 4px;
+    color: #FFF;
+}
+
+.secnav {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-top: 24px;
+    margin-left: -20px;
+}
+
+.nav .secnav a {
+    padding: 0 20px 0 18px;
+    background: url(img/navhover.png) no-repeat 2px center;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.nav dd img {
+    display: block;
+    margin-bottom: 48px;
+}
+
+.nav dd h3 {
+    font-size: 30px;
+    font-family: SimSun;
+}
+
+.nav dd .line {
+    margin: 25px 0;
+    width: 2em;
+    height: 2px;
+    background: #c7bfb9;
+}
+
+.nav dd div.p {
+    padding-bottom: 45px;
+    font-size: 14px;
+    line-height: 2;
+    background: url(img/iconjt.png) no-repeat 0 bottom;
+}
+
+.rps dd {
+    right: 0;
+}
+
+/*dt中文字前面的图标*/
+.n1 {
+    background-position: 8px 6px;
+}
+
+.n2 {
+    background-position: 8px -54px;
+}
+
+.n3 {
+    background-position: 8px -81px;
+}
+
+.n4 {
+    background-position: 8px -22px;
+}
+
+.n5 {
+    background-position: 8px -141px;
+}
+
+.n6 {
+    background-position: 8px -174px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

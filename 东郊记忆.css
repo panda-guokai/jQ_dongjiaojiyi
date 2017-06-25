@@ -1,0 +1,485 @@
+
+/*样式初始化*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, span, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section{ padding:0; margin:0;}
+li{ list-style:none;}
+img{ border:0;}
+a{cursor:pointer;text-decoration:none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after {
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: '';
+    display: block;
+    font-size: 0;
+}
+
+body{font-family:Microsoft YaHei, Arial, Helvetica, sans-serif;}
+.hide{ display:none;}
+h3,h4{ font-weight:normal;}
+html,body,.banner,.banner li{ width:100%; height:100%; overflow:hidden;}
+
+body{
+    position: relative;
+}
+
+
+/*顶部渐变背景*/
+
+.shadowtop {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 131px;
+    background: url(img/shadowtop.png) repeat-x;
+    z-index: 998;
+}
+
+/*------------------------------------------------导航栏复用部分样式Begin------------------------------------------*/
+
+
+
+
+/*头部logo样式*/
+.header {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 999999;
+}
+.clearfix {
+    display: block;
+}
+.logo {
+    float: left;
+    margin-left: 15px;
+    width: 129px;
+    height: 125px;
+}
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("img/logo.png");
+}
+
+/*---------------------------头部导航样式-------------------------------------*/
+
+/*使用dl dt dd*/
+.nav dl {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+/*设置第一个dl中a的默认背景色*/
+.active {
+    background-color: #009542;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*设置hover效果*/
+/*.header .nav dl dt a:hover {*/
+    /*background-color: #009542;*/
+/*}*/
+/*.header .nav dl:hover dd {*/
+    /*display: block ;*/
+/*}*/
+
+/*设置dt中a标签的样式*/
+.nav dl a {
+    display: block;
+    padding: 0 8px 0 38px;
+    height: 30px;
+    line-height: 30px;
+    background-image: url(img/navicon.png);
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 5px;
+}
+/*设置dd大盒子的样式*/
+.nav dd {
+    display: none;
+    position: absolute;
+    top: 30px;
+    padding: 0 40px;
+    width: 380px;
+    height: 875px;
+    background: url(img/secnavbg.png) no-repeat 0 4px;
+    color: #FFF;
+}
+.secnav {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-top: 24px;
+    margin-left: -20px;
+}
+.nav .secnav a {
+    padding: 0 20px 0 18px;
+    background: url(img/navhover.png) no-repeat 2px center;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+.nav dd img {
+    display: block;
+    margin-bottom: 48px;
+}
+.nav dd h3 {
+    font-size: 30px;
+    font-family: SimSun;
+}
+.nav dd .line {
+    margin: 25px 0;
+    width: 2em;
+    height: 2px;
+    background: #c7bfb9;
+}
+.nav dd div.p {
+    padding-bottom: 45px;
+    font-size: 14px;
+    line-height: 2;
+    background: url(img/iconjt.png) no-repeat 0 bottom;
+}
+.rps dd {
+    right: 0;
+}
+/*dt中文字前面的图标*/
+.n1 {
+    background-position: 8px 6px;
+}
+.n2 {
+    background-position: 8px -54px;
+}
+.n3 {
+    background-position: 8px -81px;
+}
+.n4 {
+    background-position: 8px -22px;
+}
+.n5 {
+    background-position: 8px -141px;
+}
+.n6 {
+    background-position: 8px -174px;
+}
+
+
+
+/*------------------------------------------------导航栏复用部分样式End------------------------------------------*/
+
+
+
+
+
+/*主体部分banner样式*/
+.banner {
+    position: relative;
+}
+.banner li {
+    position: absolute;
+    top:0;
+    overflow:hidden;
+}
+
+/*.left{*/
+    /*opacity:0;*/
+    /*!*z-index:1;*!*/
+/*}*/
+/*.middle {*/
+    /*opacity:1;*/
+    /*z-index:2;*/
+/*}*/
+/*.right {*/
+    /*opacity:0;*/
+    /*!*z-index:2;*!*/
+/*}*/
+
+
+/*banner部分样式*/
+.banner div {
+    position: absolute;
+    height: 100%;
+}
+/*大图下面附带出现的小图样式*/
+.btxt1 {
+    left: 50%;
+    width: 21.7%;
+    top:300px;
+}
+.btxt2 {
+    top:0px;
+    right: 19.7%;
+    width: 21.3%;
+}
+.btxt3 {
+    top:500px;
+    right: 11.2%;
+    width: 24.6%;
+}
+.banner span {
+    display: inline-block;
+    height: 100%;
+    line-height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+
+
+
+
+/*左侧侧边栏样式*/
+.aside {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    margin-top: -110px;
+    z-index: 999;
+}
+.aside li {
+    margin: 13px 0;
+    width: 52px;
+    height: 52px;
+    border: 3px solid #FFF;
+    border-radius: 28px;
+    overflow: hidden;
+    background: url(img/transparent.png) no-repeat 26px 0;
+}
+.aside a {
+    display: block;
+    height: 52px;
+    width: 142px;
+}
+.a1 {
+    background-position: center 13px;
+}
+.a2 {
+    background-position: center center;
+}
+.a3 {
+    background-position: center -150px;
+}
+.asideicon {
+    float: left;
+    width: 52px;
+    height: 52px;
+    background-image: url(img/asideicon.png);
+    background-repeat: no-repeat;
+}
+.asidetxt {
+    float: left;
+    width: 90px;
+    height: 52px;
+    line-height: 52px;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    background: #00af55;
+}
+
+
+
+/*左侧底部样式*/
+.index-news-center {
+    position: absolute;
+    left: 138px;
+    bottom: 30px;
+    width: 81px;
+    height: 77px;
+    z-index: 1000;
+}
+.news-title-btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    padding: 10px 0;
+    width: 81px;
+    text-align: center;
+    color: #FFF;
+    background: #00af55;
+    font-size: 14px;
+    z-index: 1;
+}
+.news-title-btn p {
+    height: 19px;
+    line-height: 19px;
+}
+.trig {
+    position: absolute;
+    right: -19px;
+    top: 0;
+    height: 77px;
+    width: 19px;
+    color: #FFF;
+    line-height: 77px;
+    text-align: center;
+    background: #d70837;
+}
+.trig i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:url("img/mcsb_buttons.png") no-repeat -66px -59px;
+    position: absolute;
+    top:35px;
+    left:4px;
+}
+.open {
+    display: inline-block;
+    width: 290px;
+    height: auto;
+    bottom:30px;
+    left:138px;
+    background: rgba(101, 98, 96,.8);
+    padding-bottom: 20px;
+}
+.contenWrap .index-newslist {
+    height: 310px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    text-align: center;
+    padding: 35px 30px 0;
+    /* padding: 35px 60px 0 50px; */
+    margin-bottom: 10px;
+}
+.contenWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contenWrap .ljUrl {
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+.index-newlist {
+    height: 310px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    text-align: center;
+    padding: 35px 30px 0;
+    /* padding: 35px 60px 0 50px; */
+    margin-bottom: 10px;
+}
+.index-newlist a {
+    display: block;
+    padding: 20px;
+    color: #e7ded6;
+    border: 1px solid #928070;
+}
+.contenWrap .img {
+    width: 185px;
+    height: 232px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.contenWrap img {
+    width: 185px;
+}
+.index-newlist div {
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: #ccbcae;
+    font-size: 14px;
+}
+.index-newlist h4 {
+    color:#fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.contenWrap .iconfont {
+    color:#fff;
+    text-align: center;
+    font-size: 12px;
+}
+.viewMore {
+    margin: 0 auto;
+    display: block;
+    width: 304px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background: #009542;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 14px;
+}
+.close-btn {
+    position: absolute;
+    right: 19px;
+    top: 9px;
+    color: #FFF;
+    font-size: 30px;
+}
+
+/*.index-newslist div {*/
+    /*margin-bottom: 10px;*/
+    /*line-height: 20px;*/
+    /*font-size: 14px;*/
+/*}*/
+
+
+
+
+
+.shadowbottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 131px;
+    background: url(img/shadowbottom.png) repeat-x;
+    z-index: 998;
+}
+.footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    z-index: 999;
+}
+.clearfix {
+    display: block;
+}
+.qrcode {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+.finfo {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    text-transform: uppercase;
+}
+.share, .share a {
+    color: #FFF;
+}
+.share {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 14px;
+}
+.share a {
+    margin-left: 7px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.copyright {
+    font-size: 12px;
+    color: #FFF;
+}
+.copyright a {
+    color: #FFF;
+}
+.copyright a:hover {
+    border-bottom:1px solid #fff;
+}

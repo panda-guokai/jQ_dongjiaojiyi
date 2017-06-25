@@ -1,0 +1,187 @@
+.bgImg{
+    width:1535px;
+    height: auto;
+}
+.wrapBox{
+    position: absolute;
+    top:155px;
+    width: 100%;
+}
+.wrapBox .relativeBox {
+    position: relative;
+}
+/*导航*/
+.wrapBox .relativeBox .menuTab .menu{
+    margin: 0 50px 20px 0;
+}
+.wrapBox .relativeBox .menuTab .menu li a{
+    display: block;
+    line-height:26px;
+    padding:0 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    margin:0 5px;
+}
+.wrapBox .relativeBox .menuTab .menu li a:hover ,.wrapBox .relativeBox .menuTab .menu li.active a {
+    background: #009542;
+}
+/*主体盒子们*/
+.menuCont{
+    padding:0 10px 0 0;
+}
+.menuCont .contBox{
+    position: relative;
+    height:100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.menuCont .reLittleBox{
+    width: 2160px;
+    left:0;
+    margin-bottom: 40px;
+}
+.menuCont ul{
+    width: 2120px;
+}
+.menuCont ul li{
+    margin:0 10px;
+    cursor: pointer;
+    float: left;
+}
+/*小盒子*/
+.menuCont ul li .littleBox {
+    width: 245px;
+    height:390px;
+}
+.menuCont ul li .littleBox .imgBox{
+    height:280px;
+    float: left;
+}
+.menuCont ul li .littleBox .imgBox img{
+    width:100%;
+    height:auto;
+}
+.menuCont ul li .littleBox .txt{
+    float: left;
+    height: 90px;
+    padding:10px;
+    background:#640c20 url("../images/cbg.jpg") no-repeat center;
+}
+.menuCont ul li .littleBox .txt h3{
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.menuCont ul li .littleBox .txt p{
+    font-size: 12px;
+    line-height: 20px;
+    margin:8px 0 0;
+}
+/*小盒子展开*/
+.contBox .bigBox{
+    width: 1100px;
+    height:390px;
+    overflow: hidden;
+    position: absolute;
+    z-index:10;
+    left:50%;
+    margin-left:-550px;
+    top: 0;
+}
+.contBox .bigBox .left_imgBox {
+    width: auto;
+    height:390px;
+}
+.contBox .bigBox .right_txtBox {
+    background: #fff;
+    width: 660px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    padding:30px;
+}
+.contBox .bigBox .right_txtBox .txtBox{
+    position: relative;
+    top:0;
+    left:0;
+}
+.contBox .bigBox .right_txtBox .txtBox h3 {
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom: 24px;
+}
+.contBox .bigBox .right_txtBox .txtBox h3 .line{
+    background: #00af55;
+    width: 30px;
+    height:3px;
+    margin-top: 24px;
+}
+.contBox .bigBox .right_txtBox .txtBox .manyPs{
+    color: #333;
+}
+.contBox .bigBox .right_txtBox .txtBox .manyPs img{
+    width:100%;
+    height:auto;
+}
+.contBox .bigBox .right_txtBox .txtScroll{
+    width: 5px;
+    height:90%;
+    top:5%;
+    right:10px;
+    background: rgba(255,255,255,.3);
+    border-radius: 5px;
+    position: absolute;
+}
+.contBox .bigBox .right_txtBox .txtScroll .txtBar {
+    height:100px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background:#640c20;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*滚动条*/
+.menuCont .scroll{
+    width:100%;
+    height: 5px;
+    background:rgba(255,255,255,.3);
+    position: absolute;
+    bottom:0;
+    left: 0;
+    border-radius: 5px;
+}
+.menuCont .scroll .bar{
+    width: 100px;
+    height:5px;
+    border-radius: 5px;
+    background: #640c20;
+    position: absolute;
+}
+.menuCont .scroll .bar:hover {
+    background: #fff;
+}
+/*查看更多*/
+.wrapBox .relativeBox .more{
+    border-radius: 5px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    width: 100px;
+    bottom: -50px;
+    left: 50%;
+    line-height: 35px;
+    margin-left: -50px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,426 @@
+﻿/*------------------------------ 初始化 start---------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.fr {
+    float: right;
+    display: inline;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+/* clear float */
+.clearboth {
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: '';
+    display: block;
+    font-size: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre.fa {
+    font-family: 微软雅黑;
+}
+
+.clearfix {
+    display: inline-table;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .clearfix {
+    zoom: 1;
+}
+
+/* IE7 */
+body, input, textarea, select {
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+.btn:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -o-transform: scale(.95);
+}
+
+.hide {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+h3, h4 {
+    font-weight: normal;
+}
+
+.contenWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* Base */
+html, body, .banner, .banner li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*------------------------------ 初始化 end---------------------------------*/
+
+/*-------------------------------头部 start ------------------------------------*/
+
+/*最上面设置背景图片*/
+.shadowtop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 131px;
+    background: url(../images/shadowtop.png) repeat-x;
+    z-index: 998;
+}
+/*最下面设置背景图片*/
+.shadowbottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 131px;
+    background: url(../images/shadowbottom.png) repeat-x;
+    z-index: 998;
+}
+.header {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 999999;
+}
+.clearfix {
+    display: block;
+}
+.logo {
+    float: left;
+    margin-left: 15px;
+    width: 129px;
+    height: 125px;
+}
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/logo.png");
+}
+
+/*---------------------------头部导航样式-------------------------------------*/
+
+/*使用dl dt dd*/
+.nav dl {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+/*设置第一个dl中a的默认背景色*/
+.active {
+    background-color: #009542;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*设置hover效果*/
+/*.header .nav dl dt a:hover {*/
+/*background-color: #009542;*/
+/*}*/
+/*.header .nav dl:hover dd {*/
+/*display: block ;*/
+/*}*/
+
+/*设置dt中a标签的样式*/
+.nav dl a {
+    display: block;
+    padding: 0 8px 0 38px;
+    height: 30px;
+    line-height: 30px;
+    background-image: url(../images/navicon.png);
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 5px;
+}
+/*设置dd大盒子的样式*/
+.nav dd {
+    display: none;
+    position: absolute;
+    top: 30px;
+    padding: 0 40px;
+    width: 380px;
+    height: 875px;
+    background: url(../images/secnavbg.png) no-repeat 0 4px;
+    color: #FFF;
+}
+.secnav {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-top: 24px;
+    margin-left: -20px;
+}
+.nav .secnav a {
+    padding: 0 20px 0 18px;
+    background: url(../images/navhover.png) no-repeat 2px center;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+.nav dd img {
+    display: block;
+    margin-bottom: 48px;
+}
+.nav dd h3 {
+    font-size: 30px;
+    font-family: SimSun;
+}
+.nav dd .line {
+    margin: 25px 0;
+    width: 2em;
+    height: 2px;
+    background: #c7bfb9;
+}
+.nav dd div.p {
+    padding-bottom: 45px;
+    font-size: 14px;
+    line-height: 2;
+    background: url(../images/iconjt.png) no-repeat 0 bottom;
+}
+.rps dd {
+    right: 0;
+}
+/*dt中文字前面的图标*/
+.n1 {
+    background-position: 8px 6px;
+}
+.n2 {
+    background-position: 8px -54px;
+}
+.n3 {
+    background-position: 8px -81px;
+}
+.n4 {
+    background-position: 8px -22px;
+}
+.n5 {
+    background-position: 8px -141px;
+}
+.n6 {
+    background-position: 8px -174px;
+}
+
+
+/*------------------------------- 底部 start--------------------------------*/
+.footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    z-index: 999;
+}
+
+.qrcode {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+
+.finfo {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    text-transform: uppercase;
+}
+
+.share {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.share, .share a {
+    color: #FFF;
+}
+
+.share a {
+    margin-left: 7px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.share a:hover {
+    font-size: 36px;
+}
+
+.share-weixin {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #FFF;
+}
+
+.copyright span {
+    padding-left: .5em;
+}
+
+.copyright em {
+    padding-left: 1em;
+}
+
+.copyright a {
+    color: #FFF;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid #FFF;
+}
+/*--------------------------  底部 end ----------------------------------*/
+
+
+/*-----------------------  中间的内容 start--------------------------------*/
+.musiclist li {
+    width: 307px;
+    margin: 0 32px;
+    float: left;
+}
+
+.music-carousel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1113px;
+    margin: -200px 0 0 -556px;
+}
+
+.music-carousel .carousel-box {
+    width: 1113px;
+    overflow: hidden;
+}
+
+.musiclist {
+    position: relative;
+}
+
+.musiclist li {
+    text-align: center;
+}
+
+.musiclist h3 {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 43px 5px 10px;
+    font-size: 12px;
+    font-family: "MS Serif", "New York", serifl;
+    text-transform: uppercase;
+    color: #CCC;
+    background: url(../images/mshadow.png) no-repeat center 10px;
+    border-bottom: 1px solid #515151;
+}
+
+.musiclist h4 {
+    font-size: 18px;
+    line-height: 2;
+    color: #00af55;
+    font-weight: bold;
+}
+
+.musiclist p {
+    font-size: 12px;
+    color: #999;
+    line-height: 2;
+}
+
+/*设置图片动起来 start*/
+.ratate360 {
+    animation: ratate360 3s linear both infinite;
+    -webkit-animation: ratate360 3s linear both infinite;
+    -moz-animation: ratate360 3s linear both infinite;
+    -o-animation: ratate360 3s linear both infinite;
+}
+
+@keyframes ratate360 {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes ratate360 {
+    to {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes ratate360 {
+    to {
+        -moz-transform: rotateZ(360deg);
+    }
+}
+
+@-o-keyframes ratate360 {
+    to {
+        -o-transform: rotateZ(360deg);
+    }
+}
+
+/*--------------------------------------------中间的内容  end----------------------------*/

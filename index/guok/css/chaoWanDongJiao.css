@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/*整个页面*/
+body {
+    height: 100%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    background-image: url('../1.jpg');
+}
+
+/*设置主要内容的父盒子*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.body {
+    transition: 2s;
+}
+
+.main3d {
+    transform: translate3d(820px, 0, -1000px) rotateY(-80deg);
+}
+
+/*主要内容分除的4个小部分*/
+.main .part {
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    height: 100%;
+    background-color: #000;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    color: #FFF;
+}
+
+/*-------------------4个小模块中的图片*/
+.main .part img {
+    position: absolute;
+    left: 50%;
+    opacity: 0.5;
+    width: auto;
+    height: 100%;
+}
+
+/*-----图片的hover样式*/
+.main .part:hover img {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    transform: translateZ(50px);
+    opacity: 1;
+}
+
+/*---------------主要控制 01 02 03 04 这几个数字标题*/
+.main .part span {
+    position: absolute;
+    left: 20%;
+    bottom: 63%;
+    width: 53px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 23px;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    text-align: center;
+    transition: all .5s;
+}
+
+/*-hover-主要控制 01 02 03 04 这几个数字标题*/
+.main .part:hover span {
+    position: absolute;
+    left: 80%;
+    bottom: 3%;
+    width: 53px;
+    height: 455px;
+    line-height: 60px;
+    font-size: 23px;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    text-align: center;
+    transition: all .5s;
+    z-index: 3;
+}
+
+/*-------------------主要控制 “工业记忆之旅” 等副标题的样式*/
+.main .part h3 {
+    position: absolute;
+    left: 20%;
+    bottom: 55%;
+    font: normal 23px/50px "幼圆";
+    width: 6em;
+    transition: all .5s;
+}
+
+/*---hover-主要控制 “工业记忆之旅” 等副标题的样式*/
+.main .part:hover h3 {
+    position: absolute;
+    bottom: 420px; /* 435/950 */
+    left: 10%;
+    height: 30px;
+    padding: 10px 20px;
+    font: normal 23px/30px "幼圆";
+    border: 2px solid #fff;
+    transition: all .5s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*------------------副标题底下的英文部分*/
+.main .part i {
+    position: absolute;
+    left: 20%;
+    bottom: 50%;
+    line-height: 40px;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: all .5s;
+}
+
+/*--hover--副标题底下的英文部分*/
+.main .part:hover i {
+    position: absolute;
+    left: 20%;
+    bottom: 100%;
+    line-height: 40px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .5s;
+}
+
+/*------------------英文标题底下的中文部分*/
+.main .part p {
+    position: absolute;
+    left: 20%;
+    bottom: 48%;
+    line-height: 40px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all .5s;
+}
+
+/*--hover--英文标题底下的中文部分*/
+.main .part:hover p {
+    position: absolute;
+    left: 20%;
+    bottom: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all .5s;
+}
+
+/*-------------详情样式*/
+.main .part .green {
+    position: absolute;
+    bottom: -540px;
+    height: 520px;
+    width: 100%;
+    background-color: #00af55;
+    transition: all .5s;
+}
+
+/*----------详情hover后的详情样式*/
+.main .part:hover .green {
+    bottom: 0;
+    background-color: #00af55;
+    transition: all .5s;
+}
+
+/*文字和滚动条的公用父盒子*/
+.main .part .green .green-main {
+    font-size: 14px;
+    position: absolute;
+    bottom: 16%;
+    margin-left: 10%;
+    width: 80%;
+    height: 295px;
+    overflow: hidden;
+}
+
+/*文字内容*/
+.main .part .green .green-main .content {
+    width: 80%;
+    line-height: 1.5;
+}
+
+/*滚动条的滚动范围*/
+.main .part .green .green-main .scroll {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+/*滚动条*/
+.main .part .green .green-main .bar {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/*弹出框*/
+.pic-fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1366px;
+    height: 1000px;
+    transition: 2s;
+    transform: translate3d(-600px, 0, -8000px) rotateY(-90deg);
+    display: none;
+    z-index: 999;
+}
+
+/*图片区域*/
+.pic-fa .pic {
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    width: 1000px;
+    height: 600px;
+}
+
+/*图片内容*/
+.pic-fa .pic ul.big li {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #CCCCCC;
+    box-shadow: #CCCCCC;
+    box-sizing: border-box;
+
+}
+
+.pic-fa .pic ul.big li img {
+    width: 1000px;
+    box-shadow: #CCCCCC;
+    box-sizing: border-box;
+}
+
+/*关闭按钮*/
+.pic-fa .pic .close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+}
+
+#box {
+    width: 100px;
+    height: 3000px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: absolute;
+    top: 0;
+    left: 1100px;
+    padding: 30px 10px;
+    z-index: 1000;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*-webkit-perspective: 1000 px;*/
+}
+
+#box img {
+    margin-top: 5px;
+    float: left;
+    height: 100px;
+    transform: translate3d(-1500px, 183px, 700px) rotateY(-160deg);
+    border-radius: 30px;
+}
+
